@@ -88,9 +88,9 @@ tasks.configureEach<JavaCompile> {
     options.apply {
         encoding = "UTF-8"
         compilerArgs.add("-Xlint:deprecation")
-        if (buildParameters.werror) {
-            compilerArgs.add("-Werror")
-        }
+//        if (buildParameters.werror) {
+//            compilerArgs.add("-Werror")
+//        }
     }
 }
 

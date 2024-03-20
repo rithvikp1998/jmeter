@@ -74,7 +74,7 @@ public class TreeBuilder {
      */
     public val elementStack: List<TestElement> get() = elementStackPrivate
 
-    public val currentElement: TestElement get() = elementStack.last()
+    public val currentElement: TestElement? get() = elementStack.lastOrNull()
 
     public val parent: TestElement? get() = elementStack.getOrNull(elementStack.lastIndex - 1)
 
